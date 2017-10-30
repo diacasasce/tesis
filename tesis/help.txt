@@ -1,0 +1,32 @@
+Ayuda de para la clase Chess-ter
+###  Atributos
+	nombre  -> tipo
+	Camara  -> Picamera 
+	color   -> int
+	motor   -> Stockfish
+	tablero -> chess
+
+### Metodos
+-- Constructor
+Chesster(sharp=50,contrast=50,bright=50)
+ 	--> Parametros de camara (Valores por defecto [ 50 ])
+	sharp = [0 - 100] - Nitidez 
+	contrast = [0 - 100] - Contraste 
+	Bright = [0-100] - Brillo
+
+preview(s=5)
+	previsualiza la camara
+	s -> Tiempo en segundos de la previsualizacion de la camara
+	usa metodos de la clase picamera
+
+new_game(col=1)
+	inicializa las variables de juego
+	-> color
+	->col= [0 1] Color con el que el brazo juega
+		-> 1 = Blancas
+		-> 0 = Negras
+	-> tablero
+	-> motor
+captura(name='captura.jpg')
+	devuelve imagen
+
